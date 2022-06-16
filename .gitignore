@@ -1,0 +1,7 @@
+# stuff to ignore
+gradle
+*.txt
+.settings
+.project
+.gradle
+.gitignore
