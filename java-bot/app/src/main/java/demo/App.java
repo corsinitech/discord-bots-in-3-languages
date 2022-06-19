@@ -17,11 +17,8 @@ public class App {
     public static void main(String[] args) {        
         DiscordApi api = new DiscordApiBuilder().setToken(TOKEN).login().join();
 
-        api.addMessageCreateListener(event -> {
-            if (event.getMessageContent().equalsIgnoreCase("!ping")){
-                event.getChannel().sendMessage("Pong!");
-            }
-        });
+        api.addMessageCreateListener(new PingCommand());
+        api.addMessageCreateListener(new UserRoleListCommand());
 
     }
 

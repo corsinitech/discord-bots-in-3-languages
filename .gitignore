@@ -5,3 +5,6 @@ gradle
 .project
 .gradle
 .gitignore
+token.txt
+java/app/bin/*
+java/app/build/*
